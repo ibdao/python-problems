@@ -10,4 +10,4 @@ def last_element(lst):
     if lst == []:
         return None
     else:
-        return lst.pop()
+        return lst[-1]

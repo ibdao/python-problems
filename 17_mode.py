@@ -11,3 +11,11 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    curr_count = 0
+    curr_highest = 0
+
+    for num in nums:
+        if nums.count(num) > curr_count:
+            curr_highest = num
+            curr_count = nums.count(num)
+    return curr_highest
