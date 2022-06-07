@@ -49,9 +49,7 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         else:
             return f"{message} {divide(a,b)}"
     else:
-        return """Traceback (most recent call last):
-          ...
-        ValueError: Invalid Operation"""
+        raise ValueError("Invalid Operation")
 
 
 
