@@ -7,3 +7,6 @@ def list_check(lst):
         >>> list_check([[1], "nope"])
         False
     """
+    list_items = [item for item in lst if type(item) == list]
+    return len(list_items) == len(lst)
+        
